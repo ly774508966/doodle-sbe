@@ -7,20 +7,20 @@
 
   <parent>
     <groupId>doodle</groupId>
-    <artifactId>doodle-sbe-build</artifactId>
+    <artifactId>doodle-sbe-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath>doodle-sbe-build/pom.xml</relativePath>
+    <relativePath>../doodle-sbe-parent/pom.xml</relativePath>
   </parent>
 
-  <artifactId>doodle-sbe</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>doodle-sbe-boot</artifactId>
+  <packaging>jar</packaging>
 
-  <modules>
-    <module>doodle-sbe-bom</module>
-    <module>doodle-sbe-boot</module>
-    <module>doodle-sbe-boot-starter</module>
-    <module>doodle-sbe-build</module>
-    <module>doodle-sbe-parent</module>
-  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
 
 </project>

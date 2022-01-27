@@ -15,4 +15,19 @@
   <artifactId>doodle-sbe-bom</artifactId>
   <packaging>pom</packaging>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>doodle</groupId>
+        <artifactId>doodle-sbe-boot</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle</groupId>
+        <artifactId>doodle-sbe-boot-starter</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
 </project>

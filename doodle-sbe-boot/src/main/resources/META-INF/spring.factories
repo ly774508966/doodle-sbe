@@ -1,0 +1,7 @@
+# Application Context Initializers
+org.springframework.context.ApplicationContextInitializer=\
+doodle.sbe.boot.support.MultiApplicationContextInitializer
+
+# Environment Post Processors
+org.springframework.boot.env.EnvironmentPostProcessor=\
+doodle.sbe.boot.env.BootstrapEnvPostProcessor
